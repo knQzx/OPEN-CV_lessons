@@ -9,7 +9,7 @@ while True:
     frame = cv2.imread('people.png')
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.1, 15)
+    faces = face_cascade.detectMultiScale(gray, 1.1, 3)
 
     for (x, y, width, height) in faces:
         cv2.rectangle(frame, (x, y), (x + width, y + height), (255, 255, 0), 2)
