@@ -1,12 +1,11 @@
 import cv2
 
 
-# cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(2)
 
-face_cascade = cv2.CascadeClassifier(r'C:\Users\User\PycharmProjects\pythonProject\haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 while True:
-    #ret, frame = cap.read()
-    frame = cv2.imread('people.png')
+    ret, frame = cap.read()
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.1, 3)
