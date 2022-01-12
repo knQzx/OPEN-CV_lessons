@@ -1,1 +1,1 @@
-# Face recognition in photos using haar cascades (or video)
+## Face recognition in photos using haar cascades (or video)

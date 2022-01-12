@@ -1,0 +1,1 @@
+### This program is made in order to recognize people in real time, send their photos to telegram, enter them into the database and then work with it
